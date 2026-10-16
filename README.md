@@ -80,3 +80,23 @@ I expected several waves because births add susceptible newborns while death rem
 
 ### $\beta$ vs. $\gamma$: rejected
 I expected $\gamma$ to affect the peak more than $\beta$ because $\gamma$ changes both $R_0$ and how long each person stays infectious. But how long people stay sick ($1/\gamma$) is already part of $R_0=\beta N /\gamma$, so these are the same effect, not two separate ones. Halving $\beta$ and doubling $\gamma$ both halve $R_0$ in teh same way. The contour plots confirm that the peak contours follow the $\beta/\gamma$ ratio, so $\beta$ and $\gamma$ have a similar effect on the peak. I learned that parameters act through combined quantities like $R_0=\beta N /\gamma$, so reasoning about one parameter alone can make its effect bigger than it actually is. 
+
+
+## How to run
+
+```bash
+git clone https://github.com/JangwonLim/bmi500-sir-seir-modeling.git
+cd bmi500-sir-seir-modeling
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Run the notebooks in order: `partA.ipynb`, `partB.ipynb`, `partC.ipynb`, `partD.ipynb`, `partE.ipynb`.
+Shared model and solver functions are in `utils.py`. Figures are saved to `figures/`.
+
+## Repository structure
+- `hypothesis.pdf` – handwritten hypothesis
+- `utils.py` – SIR/SEIR models and Euler/RK4 solvers
+- `partA/B/C/D/E.ipynb` – modeling, visualization, and analysis
+- ...
