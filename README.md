@@ -71,3 +71,12 @@ The red dashed line marks $R_0 = 1$. To the upper left of this line, $\beta$ is 
 
 
 ## Hypothesis revisited
+
+### Infection peak: partially supported
+I predicted that infections would grow by about 15% per day, reach the peak in about a month, stop growing when S fell to 800, and that fewer than half of the roughly 1200 people infected by then would still be sick at the peak. The general mechanism was correct. S at peak was 802, and the peak size of 469 people was below my upper bound of 600. The timing was off. The peak came on 42.5 day rather than around 30th. The epidemic slows well before the peak, so pure exponential growth underestimates the time to peak. The lesson that I learned is that early exponential growth cannot be extrapolated, because the growth rate itself shrinks as susceptibles are used up, so the peak comes later than a constant-rate esitmate suggests. 
+
+### Waves in the SEIR model: supported 
+I expected several waves because births add susceptible newborns while death remove immune people, and I expected the exposed stage to delay the waves. The 1500-day simulation showed five waves, and the first wave came later than the Part B peak, as discussed in Results and Discussion section. One thing I did not expect was that the waves would shrink so quickly. The lesson that I learned from this is that a single added mechanism can change a model's long-term behavior from one wave to a few oscillations, and that behavior depends strongly on parameter choices such as lifespan. 
+
+### $\beta$ vs. $\gamma$: rejected
+I expected $\gamma$ to affect the peak more than $\beta$ because $\gamma$ changes both $R_0$ and how long each person stays infectious. But how long people stay sick ($1/\gamma$) is already part of $R_0=\beta N /\gamma$, so these are the same effect, not two separate ones. Halving $\beta$ and doubling $\gamma$ both halve $R_0$ in teh same way. The contour plots confirm that the peak contours follow the $\beta/\gamma$ ratio, so $\beta$ and $\gamma$ have a similar effect on the peak. I learned that parameters act through combined quantities like $R_0=\beta N /\gamma$, so reasoning about one parameter alone can make its effect bigger than it actually is. 
