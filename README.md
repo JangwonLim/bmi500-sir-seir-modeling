@@ -58,4 +58,12 @@ Birth and deaths are what make repeated waves possible. Without them, as shown i
 Instead of $\mu=0.005$ per day, we should use the realistic lifespan of about 80 years. Then, $\mu$ becomes approximately $3.4 * 10^-5$ per day. This means only about 0.07 newborns per day would be included in S. Refilling S above the threshold would then take decades, so within 1500 days the model would show only one wave, like Part B. In real populations, repeated waves usually come from low immunity, seasonality, or new variants like we've all experienced during Covid19. 
 
 ### Part E
-**(i)** 
+**(i)** I ran the SEIR model with a given grid of parameter values. For each pair, I recorded the peak number of infected people and the total number of new infections. The total was computed by integrating the new-infection rate over time using Simpson's rule. 
+
+**(ii)**
+![Peak infected](figures/peak_infected_contour.png)
+![Total new infections](figures/total_infected_contour.png)
+
+The red dashed line marks $R_0 = 1$. To the upper left of this line, $\beta$ is low and $\gamma$ is high, so $R_0$ < 1. Each infected person passes the disease to fewer than one other person on average, so the outbreak dies out on its own. 
+
+**(iii)** Lowering $\beta$ means lowering the transmission rate, which I can think of it as social distancing, masks, or anything that can help reduce the transmission rate. Raising $\gamma$ indicates faster treatment or effective isolation that shortens the infectious period. On the plot, the contours follow the $\beta/\gamma$ ratio, so a given relative reduction in $\beta$ and a given relative increase in $\gamma$ have a similar effect on the peak. Therefore, combining social distancing and treatment is the most reliable way to move firmly below the threshold. 
