@@ -94,9 +94,8 @@ pip install -r requirements.txt
 
 Run the notebooks in order: `partA.ipynb`, `partB.ipynb`, `partC.ipynb`, `partD.ipynb`, `partE.ipynb`.
 Shared model and solver functions are in `utils.py`. Figures are saved to `figures/`.
-
-## Repository structure
-- `hypothesis.pdf` – handwritten hypothesis
-- `utils.py` – SIR/SEIR models and Euler/RK4 solvers
-- `partA/B/C/D/E.ipynb` – modeling, visualization, and analysis
 - ...
+
+
+## AI statement
+Statement: Claude was used to complete this homework. The full chat is available at https://claude.ai/share/733ce3f1-0127-44c5-b979-3e9f17bffa26
