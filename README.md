@@ -67,3 +67,7 @@ Instead of $\mu=0.005$ per day, we should use the realistic lifespan of about 80
 The red dashed line marks $R_0 = 1$. To the upper left of this line, $\beta$ is low and $\gamma$ is high, so $R_0$ < 1. Each infected person passes the disease to fewer than one other person on average, so the outbreak dies out on its own. 
 
 **(iii)** Lowering $\beta$ means lowering the transmission rate, which I can think of it as social distancing, masks, or anything that can help reduce the transmission rate. Raising $\gamma$ indicates faster treatment or effective isolation that shortens the infectious period. On the plot, the contours follow the $\beta/\gamma$ ratio, so a given relative reduction in $\beta$ and a given relative increase in $\gamma$ have a similar effect on the peak. Therefore, combining social distancing and treatment is the most reliable way to move firmly below the threshold. 
+
+
+
+## Hypothesis revisited
