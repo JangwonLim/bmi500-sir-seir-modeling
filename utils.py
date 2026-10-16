@@ -10,6 +10,7 @@ def sir_model(t, y, beta=0.125*1e-3, gamma=0.1):
 
 # numerical solvers for the SIR model
 def euler(f, y, t, beta=0.125*1e-3, gamma=0.1):
+    dt = t[1] - t[0]
     for i in range(1, len(t)):
         y[i] = y[i-1] + dt * f(t[i-1], y[i-1], beta=beta, gamma=gamma)
     return t, y
